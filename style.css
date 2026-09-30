@@ -1,0 +1,73 @@
+/* Reset Dasar & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #365983; /* Warna hitam soft / dark mode */
+    color: #ffffff;            /* Mengubah warna teks utama jadi putih */
+    margin: 0;
+    padding: 0;
+}
+
+/* Pembungkus Utama di Tengah Layar */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    
+    /* --- BORDER KOTAK --- */
+    border: 2px solid #4385b1;       /* Ketebalan & warna garis */
+    border-radius: 12px;             /* Melengkungkan sudut kotak */
+    background-color: #4385b1;       /* Warna latar di dalam kotak */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Bayangan lembut */
+}
+/* Section Profil Rata Tengah */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Mengetengahkan elemen secara horizontal */
+    justify-content: center;
+}
+
+/* Lingkaran & Ukuran Foto Profil */
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* Membuat foto berbentuk bulat */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Mengetengahkan & Mengatur Jarak Ikon Social Media */
+.social-links {
+    display: flex;
+    justify-content: center; /* Ikon berjejer di tengah */
+    align-items: center;
+    gap: 15px; /* Jarak antar ikon */
+    margin: 20px 0 10px 0;
+}
+
+.social-icon {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+    color: #dde5ee;
+    transform: translateY(-3px); /* Efek terangkat saat kursor di atasnya */
+}
+
+/* Garis Pembatas */
+.divider {
+    margin: 30px auto;
+    border: none;
+    border-top: 1px solid #ddd;
+    width: 80%;
+}
